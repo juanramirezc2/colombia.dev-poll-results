@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Papa from 'papaparse';
 import { useState, useEffect } from 'react';
@@ -35,7 +34,8 @@ function App() {
           }
   });
     }
-  }, [])
+  }, [filteredData.length])
+
   return (
     <div className="App">
       <h1>Salarios en USD</h1>
